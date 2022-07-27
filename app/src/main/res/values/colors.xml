@@ -9,5 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="bg">#0d161d</color>
     <color name="logobg">#19222d</color>
-    <color name="textColor">#00aae1</color>
+    <color name="signBtnColor">#00aae1</color>
+    <color name="buttonbg">#465163</color>
+    <color name="textColor">#465163</color>
 </resources>

@@ -2,6 +2,7 @@ package com.royalaviation.scrollp3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private EditText etUname,etUPass;
     private Button btnSign;
+    private ProgressDialog pd;
     String name,pass;
 
     @Override
@@ -23,6 +25,7 @@ public class LoginActivity extends AppCompatActivity {
         etUname = findViewById(R.id.etName);
         etUPass = findViewById(R.id.etPass);
         btnSign = findViewById(R.id.btnSign);
+        pd = new ProgressDialog(this);
 
         btnSign.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,8 +59,13 @@ public class LoginActivity extends AppCompatActivity {
             etUPass.requestFocus();
             return;
         }
-
-        Intent intent = new Intent(LoginActivity.this,MainActivity.class);
-        startActivity(intent);
+        else {
+            pd.setTitle("Login Account");
+            pd.setMessage("Please wait,while we are checking the login credentials");
+            pd.setCanceledOnTouchOutside(false);
+            pd.show();
+            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            startActivity(intent);
+        }
     }
 }
