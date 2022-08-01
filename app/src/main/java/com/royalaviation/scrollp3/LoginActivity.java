@@ -4,16 +4,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
     private EditText etUname,etUPass;
     private Button btnSign;
     private ProgressDialog pd;
+    private TextView tvTerms;
     String name,pass;
 
     @Override
@@ -25,6 +29,7 @@ public class LoginActivity extends AppCompatActivity {
         etUname = findViewById(R.id.etName);
         etUPass = findViewById(R.id.etPass);
         btnSign = findViewById(R.id.btnSign);
+        tvTerms = findViewById(R.id.textView2);
         pd = new ProgressDialog(this);
 
         btnSign.setOnClickListener(new View.OnClickListener() {
@@ -33,6 +38,19 @@ public class LoginActivity extends AppCompatActivity {
                 validate();
             }
         });
+
+        tvTerms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                terms();
+            }
+        });
+
+    }
+
+    private void terms() {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.amazon.in/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&nodeId=200534380"));
+        startActivity(intent);
     }
 
     private void validate() {
