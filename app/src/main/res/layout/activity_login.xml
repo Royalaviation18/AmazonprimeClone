@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
-    android:background="@color/logobg">
+    android:background="@color/logobg"
+    tools:context=".LoginActivity">
 
 
     <ImageView
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="353dp"
-        android:layout_marginBottom="614dp"
+
         android:text="Sign-In"
         android:textColor="@color/white"
         android:textSize="30sp"
@@ -43,12 +43,12 @@
         android:layout_width="314dp"
         android:layout_height="45dp"
         android:layout_marginStart="102dp"
-        android:layout_marginTop="57dp"
+        android:layout_marginTop="47dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="431dp"
+        android:layout_marginBottom="500dp"
         android:background="@color/white"
         android:ems="10"
-        android:hint="Email or Name"
+        android:hint="@string/email_or_name"
         android:inputType="textPersonName"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
@@ -162,8 +162,8 @@
         android:layout_marginTop="47dp"
         android:layout_marginEnd="174dp"
         android:layout_marginBottom="10dp"
-        android:textColor="@color/textColor"
         android:text="@string/u00a9_1996_2022_amazon_com_inc_or_its_affiliates"
+        android:textColor="@color/textColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -14,11 +14,11 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private EditText etUname,etUPass;
+    private EditText etUname, etUPass;
     private Button btnSign;
     private ProgressDialog pd;
     private TextView tvTerms;
-    String name,pass;
+    String name, pass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,32 +57,32 @@ public class LoginActivity extends AppCompatActivity {
         name = etUname.getText().toString();
         pass = etUPass.getText().toString();
 
-        if(name.isEmpty()){
+        if (name.isEmpty()) {
             etUname.setError("Please Enter your name");
             etUname.requestFocus();
             return;
         }
-        if(pass.isEmpty()){
+        if (pass.isEmpty()) {
             etUPass.setError("Please Enter your password");
             etUPass.requestFocus();
             return;
         }
-        if(!name.equals("Rohit")){
+        if (!name.equals("Rohit")) {
             etUname.setError("Please enter correct name");
             etUname.requestFocus();
             return;
         }
-        if(!pass.equals("Rohit123")){
+        if (!pass.equals("Rohit123")) {
             etUPass.setError("Password doesn't match");
             etUPass.requestFocus();
             return;
-        }
-        else {
+        } else {
             pd.setTitle("Login Account");
             pd.setMessage("Please wait,while we are checking the login credentials");
             pd.setCanceledOnTouchOutside(false);
             pd.show();
             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            intent.putExtra("name", "Rohit");
             startActivity(intent);
         }
     }

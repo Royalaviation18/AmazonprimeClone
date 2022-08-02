@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity"
-    android:background="@color/logobg">
+    android:background="@color/logobg"
+    tools:context=".SplashActivity">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -23,11 +23,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="696dp"
         android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
         android:text="© Rohit Priyadarshi,2147160"
         android:textColor="@color/textColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:gravity="center_horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

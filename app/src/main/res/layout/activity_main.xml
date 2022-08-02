@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/bg">
+    android:background="@color/bg"
+    tools:context=".MainActivity">
 
 
     <ScrollView
@@ -14,11 +14,25 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvUname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/hsv3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.007" />
 
             <TextView
                 android:id="@+id/tv1"
@@ -44,7 +58,7 @@
                 app:layout_constraintHorizontal_bias="0.4"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.066" >
+                app:layout_constraintVertical_bias="0.066">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/ctView1"
@@ -64,47 +78,46 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0"
                         app:srcCompat="@drawable/movie1"
-                        tools:ignore="SpeakableTextPresentCheck"
-                        />
+                        tools:ignore="SpeakableTextPresentCheck" />
 
                     <ImageButton
                         android:id="@+id/ibMv2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/ibMv1"
                         app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0"
-                        app:srcCompat="@drawable/movie2"
-                        android:layout_marginLeft="5dp"/>
+                        app:srcCompat="@drawable/movie2" />
 
                     <ImageButton
                         android:id="@+id/ibMv3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/ibMv2"
                         app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0"
-                        app:srcCompat="@drawable/movie3"
-                        android:layout_marginLeft="5dp"/>
+                        app:srcCompat="@drawable/movie3" />
 
                     <ImageButton
                         android:id="@+id/ibMv4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/ibMv3"
                         app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0"
-                        app:srcCompat="@drawable/movie4"
-                        android:layout_marginLeft="5dp"/>
+                        app:srcCompat="@drawable/movie4" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -129,15 +142,15 @@
 
             <HorizontalScrollView
                 android:id="@+id/hsv2"
-                android:layout_marginTop="270dp"
                 android:layout_width="406dp"
                 android:layout_height="206dp"
+                android:layout_marginTop="270dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.4"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.066" >
+                app:layout_constraintVertical_bias="0.066">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/ctView2"
@@ -163,40 +176,40 @@
                         android:id="@+id/ibMv6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/ibMv5"
                         app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0"
-                        app:srcCompat="@drawable/movie6"
-                        android:layout_marginLeft="5dp"/>
+                        app:srcCompat="@drawable/movie6" />
 
                     <ImageButton
                         android:id="@+id/ibMv7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/ibMv6"
                         app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0"
-                        app:srcCompat="@drawable/movie7"
-                        android:layout_marginLeft="5dp"/>
+                        app:srcCompat="@drawable/movie7" />
 
                     <ImageButton
                         android:id="@+id/ibMv8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/ibMv7"
                         app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0"
-                        app:srcCompat="@drawable/movie8"
-                        android:layout_marginLeft="5dp"/>
+                        app:srcCompat="@drawable/movie8" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -220,15 +233,15 @@
 
             <HorizontalScrollView
                 android:id="@+id/hsv3"
-                android:layout_marginTop="540dp"
                 android:layout_width="406dp"
                 android:layout_height="206dp"
+                android:layout_marginTop="540dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.4"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.066" >
+                app:layout_constraintVertical_bias="0.066">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/ctView3"
@@ -254,40 +267,40 @@
                         android:id="@+id/ibMv10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/ibMv9"
                         app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0"
-                        app:srcCompat="@drawable/movie10"
-                        android:layout_marginLeft="5dp"/>
+                        app:srcCompat="@drawable/movie10" />
 
                     <ImageButton
                         android:id="@+id/ibMv11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/ibMv10"
                         app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0"
-                        app:srcCompat="@drawable/movie11"
-                        android:layout_marginLeft="5dp"/>
+                        app:srcCompat="@drawable/movie11" />
 
                     <ImageButton
                         android:id="@+id/ibMv12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/ibMv11"
                         app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0"
-                        app:srcCompat="@drawable/movie12"
-                        android:layout_marginLeft="5dp"/>
+                        app:srcCompat="@drawable/movie12" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -311,15 +324,15 @@
 
             <HorizontalScrollView
                 android:id="@+id/hsv4"
-                android:layout_marginTop="845dp"
                 android:layout_width="406dp"
                 android:layout_height="206dp"
+                android:layout_marginTop="845dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.4"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.066" >
+                app:layout_constraintVertical_bias="0.066">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/ctView4"
@@ -345,40 +358,40 @@
                         android:id="@+id/ibMv14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/ibMv13"
                         app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0"
-                        app:srcCompat="@drawable/movie14"
-                        android:layout_marginLeft="5dp"/>
+                        app:srcCompat="@drawable/movie14" />
 
                     <ImageButton
                         android:id="@+id/ibMv15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/ibMv14"
                         app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0"
-                        app:srcCompat="@drawable/movie15"
-                        android:layout_marginLeft="5dp"/>
+                        app:srcCompat="@drawable/movie15" />
 
                     <ImageButton
                         android:id="@+id/ibMv16"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/ibMv15"
                         app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0"
-                        app:srcCompat="@drawable/movie1"
-                        android:layout_marginLeft="5dp"/>
+                        app:srcCompat="@drawable/movie1" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
