@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp"
+    tools:context=".RateUs">
+
+    <TextView
+        android:id="@+id/tv_slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:gravity="center_horizontal"
+        android:text="Let Us Know Your Feedback!"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="377dp"
+        android:layout_height="249dp"
+        app:srcCompat="@drawable/feedback" />
+
+    <TextView
+        android:id="@+id/tvFeedback"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_slogan"
+        android:gravity="center_horizontal"
+        android:text="Very Dissatisfied"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/ll_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFeedback"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RatingBar
+            android:id="@+id/rbStars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/black"
+            android:numStars="5"
+            android:progressBackgroundTint="@color/logobg"
+            android:progressTint="#FBA700" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_icon"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter your feedback"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:padding="15dp"
+        android:shadowRadius="10" />
+
+    <TextView
+        android:id="@+id/tvQues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_feedback"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Would You recommend us?"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_feedback"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="230dp"
+        android:layout_marginBottom="142dp"
+        android:textOff="No"
+        android:textOn="Yes" />
+
+    <Button
+        android:id="@+id/btnFeedback"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_feedback"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/logobg"
+        android:text="Send Feedback"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

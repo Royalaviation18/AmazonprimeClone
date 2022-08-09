@@ -7,4 +7,6 @@
     <string name="create_a_new_amazon_account">Create a new Amazon account</string>
     <string name="u00a9_1996_2022_amazon_com_inc_or_its_affiliates">© 1996-2022, Amazon.com, Inc. or its affiliates</string>
     <string name="email_or_name">Email or Name</string>
+    <string name="sign_up_its_free">Sign Up, Its Free!</string>
+    <string name="by_creating_an_account_you_agree_to_amazon_s_conditions_of_use_and_privacy_notice">By creating an account, you agree to Amazon\'s Conditions of use and Privacy Notice</string>
 </resources>

@@ -17,7 +17,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText etUname, etUPass;
     private Button btnSign;
     private ProgressDialog pd;
-    private TextView tvTerms;
+    private TextView tvTerms,tvNew;
     String name, pass;
 
     @Override
@@ -30,6 +30,7 @@ public class LoginActivity extends AppCompatActivity {
         etUPass = findViewById(R.id.etPass);
         btnSign = findViewById(R.id.btnSign);
         tvTerms = findViewById(R.id.textView2);
+        tvNew = findViewById(R.id.tvNew);
         pd = new ProgressDialog(this);
 
         btnSign.setOnClickListener(new View.OnClickListener() {
@@ -43,6 +44,14 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 terms();
+            }
+        });
+
+        tvNew.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),RegisterActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -81,7 +90,7 @@ public class LoginActivity extends AppCompatActivity {
             pd.setMessage("Please wait,while we are checking the login credentials");
             pd.setCanceledOnTouchOutside(false);
             pd.show();
-            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            Intent intent = new Intent(LoginActivity.this, BotActivity.class);
             intent.putExtra("name", "Rohit");
             startActivity(intent);
         }
