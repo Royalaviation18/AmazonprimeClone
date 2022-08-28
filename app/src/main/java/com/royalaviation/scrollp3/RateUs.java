@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -45,7 +46,6 @@ public class RateUs extends AppCompatActivity {
                 } else if (rating == 2) {
                     feedback = ("OK");
 
-
                 } else if (rating == 3) {
                     feedback = ("Satisfied");
 
@@ -78,6 +78,8 @@ public class RateUs extends AppCompatActivity {
 
     }
 
+
+
     private void verify() {
         String feedback = etFeedback.getText().toString();
         if (feedback.equals("")) {
@@ -89,4 +91,5 @@ public class RateUs extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), BotActivity.class);
         startActivity(intent);
     }
+
 }

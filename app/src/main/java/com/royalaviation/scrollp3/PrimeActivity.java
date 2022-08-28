@@ -10,6 +10,7 @@ import android.webkit.WebViewClient;
 public class PrimeActivity extends AppCompatActivity {
 
     private WebView wb;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
