@@ -18,6 +18,7 @@ import com.google.android.material.navigation.NavigationBarView;
 public class BotActivity extends AppCompatActivity {
 
     AlertDialog.Builder builder;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +33,7 @@ public class BotActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.options_menu,menu);
+        menuInflater.inflate(R.menu.options_menu, menu);
         return true;
     }
 
@@ -40,7 +41,7 @@ public class BotActivity extends AppCompatActivity {
     //Option Menu
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.item1:
                 Toast.makeText(getApplicationContext(), "Item 1", Toast.LENGTH_SHORT).show();
                 return true;
@@ -55,8 +56,6 @@ public class BotActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
-
 
 
     private NavigationBarView.OnItemReselectedListener navListener = new NavigationBarView.OnItemReselectedListener() {

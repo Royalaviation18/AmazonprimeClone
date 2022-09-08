@@ -59,7 +59,7 @@ public class HomeFragment extends Fragment implements PopupMenu.OnMenuItemClickL
             @Override
             public boolean onLongClick(View view) {
                 //if action mode is already activated we don't to activate it again
-                if(mActionMode!=null){
+                if (mActionMode != null) {
                     return false;
                 }
 
@@ -101,8 +101,8 @@ public class HomeFragment extends Fragment implements PopupMenu.OnMenuItemClickL
 
     }
 
-    public void showPop(View view){
-        PopupMenu popupMenu = new PopupMenu(getActivity().getApplicationContext(),view);
+    public void showPop(View view) {
+        PopupMenu popupMenu = new PopupMenu(getActivity().getApplicationContext(), view);
         popupMenu.setOnMenuItemClickListener(this);
         popupMenu.inflate(R.menu.popup_menu);
         popupMenu.show();
@@ -110,7 +110,7 @@ public class HomeFragment extends Fragment implements PopupMenu.OnMenuItemClickL
 
     @Override
     public boolean onMenuItemClick(MenuItem menuItem) {
-        switch (menuItem.getItemId()){
+        switch (menuItem.getItemId()) {
             case R.id.item_1:
                 Toast.makeText(getActivity().getApplicationContext(), "Item 1 is selected", Toast.LENGTH_SHORT).show();
                 return true;
@@ -136,7 +136,7 @@ public class HomeFragment extends Fragment implements PopupMenu.OnMenuItemClickL
     private ActionMode.Callback mActionModeCallback = new ActionMode.Callback() {
         @Override
         public boolean onCreateActionMode(ActionMode actionMode, Menu menu) {
-            actionMode.getMenuInflater().inflate(R.menu.context_menu,menu);
+            actionMode.getMenuInflater().inflate(R.menu.context_menu, menu);
             actionMode.setTitle("Choose your option");
             return true;
         }
@@ -148,7 +148,7 @@ public class HomeFragment extends Fragment implements PopupMenu.OnMenuItemClickL
 
         @Override
         public boolean onActionItemClicked(ActionMode actionMode, MenuItem menuItem) {
-            switch (menuItem.getItemId()){
+            switch (menuItem.getItemId()) {
                 case R.id.option_1:
                     Toast.makeText(getActivity().getApplicationContext(), "Option 1 is selected", Toast.LENGTH_SHORT).show();
                     actionMode.finish();

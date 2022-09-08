@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ScrollP3</string>
+    <string name="app_name">Amazon Prime Clone</string>
     <string name="top_movies"><![CDATA[Top Movies >]]></string>
     <string name="comedy_shows"><![CDATA[Comedy Shows >]]></string>
     <string name="stand_up_comedy"><![CDATA[Stand Up Comedy >]]></string>
@@ -9,4 +9,6 @@
     <string name="email_or_name">Email or Name</string>
     <string name="sign_up_its_free">Sign Up, Its Free!</string>
     <string name="by_creating_an_account_you_agree_to_amazon_s_conditions_of_use_and_privacy_notice">By creating an account, you agree to Amazon\'s Conditions of use and Privacy Notice</string>
+    <string name="uri_the_surgical_strike">URI: The Surgical Strike</string>
+    <string name="uri_the_surgical_strike_is_a_2019_indian_hindi_language_action_film">Uri: The Surgical Strike is a 2019 Indian Hindi-language action film</string>
 </resources>
