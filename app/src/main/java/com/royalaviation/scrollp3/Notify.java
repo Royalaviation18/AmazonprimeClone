@@ -55,11 +55,15 @@ public class Notify extends AppCompatActivity {
                         .setWhen((new Date()).getTime())
                         .setShowWhen(true)
                         .setColorized(true)
+                        .setStyle(new NotificationCompat.BigPictureStyle().bigPicture(BitmapFactory.decodeResource(getResources(),R.drawable.alexanot)))
                         // Set the intent that will fire when the user taps the notification
                         .setContentIntent(pendingIntent)
                         .setAutoCancel(true);
 
+
                 NotificationManagerCompat notificationManager = NotificationManagerCompat.from(getApplicationContext());
+//                NotificationCompat.BigPictureStyle bigPictureStyle = new NotificationCompat.BigPictureStyle();
+//                bigPictureStyle.bigPicture(BitmapFactory.decodeResource(getResources(), R.drawable.alexanot)).build();
 
 
 // notificationId is a unique int for each notification that you must define
@@ -74,7 +78,7 @@ public class Notify extends AppCompatActivity {
     private void createNotificationChannel() {
 
         int importance = NotificationManager.IMPORTANCE_DEFAULT;
-        NotificationChannel channel = new NotificationChannel("CHANNEL_ID", "Pankaj", importance);
+        NotificationChannel channel = new NotificationChannel("CHANNEL_ID", "Rohit", importance);
         channel.setDescription("Click");
 
         NotificationManager notificationManager = getSystemService(NotificationManager.class);
